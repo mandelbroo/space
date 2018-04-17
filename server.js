@@ -5,13 +5,16 @@ const server = require('http').createServer(app)
 const io = require('socket.io')(server)
 const watch = require('node-watch')
 
-app.use(express.static('build'))
+app.use('/build', express.static('build'))
 
 app.get('/node_modules/socket.io-client/dist/socket.io.js', (req, res) => {
   const way = path.resolve(__dirname, './node_modules/socket.io-client/dist/socket.io.js')
   res.sendFile(way)
 })
 
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './index.html'))
+})
 
 io.on('connection', () => {
   console.log("Socket connection is ON!")

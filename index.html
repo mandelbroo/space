@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>SpaceX</title>
-		<link href="./index.css" rel="stylesheet" />
-		<script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+		<link href="./build/index.css" rel="stylesheet" />
+		<script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
 	</head>
 	<body>
 		<!-- start header -->
@@ -126,14 +126,16 @@
 		</div>
 		<!-- end footer -->
 		<script>
-			const socket = io("http://localhost:3000");
-			socket.on('connect', () => {
-				console.log('connected')
-			})
-			socket.on('fileChanged', (msg) => {
-				console.log(msg)
-				location.reload()
-			})
+			if (window.location.host.includes("localhost")) {
+				const socket = io("http://localhost:3000");
+				socket.on('connect', () => {
+					console.log('connected')
+				})
+				socket.on('fileChanged', (msg) => {
+					console.log(msg)
+					location.reload()
+				})
+			}
 		</script>
 	</body>
 </html>
