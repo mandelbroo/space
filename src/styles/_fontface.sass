@@ -1,0 +1,7 @@
+@mixin fontFace($family, $src, $style: normal, $weight: normal)
+	@font-face
+		font-family: $family
+		//src: url('#{$src}.eot'), url('#{$src}.eot?#iefix') format('embedded-opentype') url('#{$src}.woff') format('woff'), url('#{$src}.ttf') format('truetype'), url('#{$src}.svg##{$family}') format('svg'),
+		src: url('#{$src}.ttf') format('truetype'), url('#{$src}.otf') format('opentype')
+		font-style: $style
+		font-weight: $weight

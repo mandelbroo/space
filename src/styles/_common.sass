@@ -1,0 +1,214 @@
+@import fontface
+@include fontFace('gBlack', 'fonts/GothamBlack')
+@include fontFace('gBold', 'fonts/GothamBold')
+@include fontFace('gBook', 'fonts/GothamBook')
+
+=black
+	font-family: gBlack, sans-serif
+=bold
+	font-family: gBold, sans-serif
+=reg
+	font-family: gBook, sans-serif
+
+body
+	+reg
+	background: #2d2824
+	line-height: 1.4
+	margin: 0
+.container
+	max-width: 1100px
+	margin: 0 auto
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	padding-top: 45px
+	&__left
+		float: left
+	&__right
+		float: right
+		width: 60%
+		text-align: right
+		position: relative
+		top: 2px
+.nav
+	font-size: 14px
+	display: inline-block
+	vertical-align: middle
+	position: relative
+	top: 7px
+	margin-right: 30px
+	a
+		text-decoration: none
+		color: #b8bbc4
+		display: inline-block
+		position: relative
+		margin-left: 26px
+		overflow: hidden
+		padding-bottom: 4px
+		&:hover,&.is-active
+			color: #fff
+			&:before
+				transform: translate(0,0)
+		&::before
+			position: absolute
+			left: 0
+			width: 100%
+			bottom: 0
+			height: 2px
+			background: #2addbc
+			content: ""
+			transform: translate(-100%, 0)
+			transition: transform .2s linear
+.explore
+	display: inline-block
+	height: 35px
+	line-height: 32px
+	font-size: 14px
+	color: #abaeb7
+	border: 1px solid #abaeb7
+	border-radius: 10px
+	background: transparent
+	padding: 0 6px 0 14px
+	vertical-align: middle
+	outline: none
+	&__icon
+		width: 26px
+		height: 28px
+		display: inline-block
+		float: right
+		background: url(../img/down-chevron.svg) no-repeat center/50%
+.logo
+	color: #fff
+	&__sx
+		border: 1px solid #f2f2f2
+		display: inline-block
+		vertical-align: middle
+		font-size: 19px
+		+black
+		color: #2addbd
+		height: 35px
+		line-height: 35px
+		width: 35px
+		text-align: center
+	&__text
+		display: inline-block
+		vertical-align: middle
+		font-size: 19px
+		+bold
+.hero
+	background: #36373f url(../img/hero.jpg) no-repeat 50% 50%
+	background-size: cover
+	height: 78vh
+	padding-top: 300px
+	color: #fff
+	line-height: 1.5
+	text-align: center
+	font-size: 16px
+	&__title
+		font-size: 80px
+		color: #2addbc
+		+black
+		line-height: 1
+		margin-bottom: 30px
+	&__action
+		text-align: center
+		margin-top: 120px
+	&__start
+		border-bottom: 2px solid #2addbc
+		padding: 0 16px 10px 16px
+		text-transform: uppercase
+		color: #fff
+		text-decoration: none
+.analytics
+	color: #abaeb7
+	text-align: center
+	padding: 160px 0 200px
+	.container
+		width: 550px
+	h2
+		font-size: 12px
+	h3
+		font-size: 36px
+		color: #2addbc
+		font-weight: lighter
+		margin: 10px 0 10px
+	p
+		padding: 18px 80px 8px
+	.select__real
+		display: inline-block
+		height: 35px
+		line-height: 32px
+		font-size: 14px
+		border: 1px solid #abaeb7
+		border-radius: 10px
+		color: #abaeb7
+		padding: 0 14px
+		vertical-align: middle
+		outline: none
+		-webkit-appearance: none
+		background: url(../img/down-chevron.svg) no-repeat right/13%
+		background-position: 90%
+		option
+			background-color: #2d2824
+			border: none
+			padding: 8px 8px
+.footer
+	color: #7c7c7c
+	background-color: #fff
+	width: 100%
+	.container__top
+		border-bottom: 1px rgba(#acafb8, .2) solid
+		max-width: 1100px
+		padding: 60px 0 120px
+		margin: auto
+	&__cols
+		display: flex
+		justify-content: space-around
+		align-items: baseline
+		flex-direction: row
+	&__col
+		text-align: left
+		width: 200px
+		h3
+			font-size: 14px
+			+bold
+			text-transform: uppercase
+			position: relative
+			&::before
+				position: absolute
+				left: 0
+				width: 20px
+				bottom: 0
+				height: 2px
+				background: #dd2ac2
+				content: ""
+		ul
+			list-style: none
+			margin: 0
+			padding: 16px 0 0
+		a
+			line-height: 2
+	a
+		text-decoration: none
+		color: #7c7c7c
+		&:hover
+			color: #abaeb7
+	.container__bottom
+		max-width: 1100px
+		padding: 80px 0 120px
+		margin: auto
+	&__about
+		float: left
+		line-height: 35px
+		.logo
+			display: inline-block
+			&__sx
+				border-color: #7c7c7c
+				color: #dd2ac2
+	&__links
+		float: right
+		line-height: 35px
+		a:first-child
+			margin-right: 30px
