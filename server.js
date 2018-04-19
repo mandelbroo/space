@@ -20,9 +20,11 @@ io.on('connection', () => {
   console.log("Socket connection is ON!")
 })
 
-watch('./build', { recursive: true }, (evt, name) => {
+function watcher(evt, name) {
   console.log(`${name} changed.`)
   io.emit('fileChanged', `${name} changed`)
-})
+}
+watch('./build', { recursive: true }, watcher)
+watch('./index.html', { recursive: true }, watcher)
 
 server.listen(process.env.PORT, () => console.log(`running on ${process.env.PORT}`))
