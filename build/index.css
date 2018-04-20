@@ -228,7 +228,8 @@ body {
   .header__left {
     padding-left: 30px; }
   .header__right {
-    top: 0; }
+    top: 0;
+    width: auto; }
     .header__right .nav {
       display: none; }
     .header__right .explore {
