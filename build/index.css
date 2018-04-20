@@ -250,6 +250,54 @@ body {
       text-align: center;
       width: 35px; }
 
+  .mobile-nav {
+    background-color: #2d2824;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    text-align: center; }
+    .mobile-nav .cross {
+      display: inline-block;
+      height: 35px;
+      line-height: 32px;
+      font-size: 25px;
+      color: #abaeb7;
+      border: none;
+      background: transparent;
+      vertical-align: middle;
+      outline: none;
+      position: absolute;
+      right: 34px;
+      top: 46px; }
+    .mobile-nav .explore {
+      margin-top: 40px; }
+    .mobile-nav a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #b8bbc4;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      padding: 30px 0 10px;
+      margin: 0 25% 0; }
+      .mobile-nav a:hover, .mobile-nav a.is-active {
+        color: #fff; }
+        .mobile-nav a:hover:before, .mobile-nav a.is-active:before {
+          transform: translate(0, 0); }
+      .mobile-nav a::before {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        height: 2px;
+        background: #2addbc;
+        content: "";
+        transform: translate(-100%, 0);
+        transition: transform 0.2s linear; }
+
   .hero {
     padding-top: 200px; }
     .hero__title {

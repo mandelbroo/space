@@ -29,11 +29,25 @@
 						Explore SX
 						<span class="explore__icon"></span>
 					</button>
-					<button class="burger" style="display:none">☰</button>
+					<button class="burger" style="display:none" onclick="showHideMenu()">☰</button>
 				</div>
 			</div>
 		</header>
 		<!-- end header -->
+		<!-- start mobile menu -->
+		<div class="mobile-nav" style="display:none">
+			<button class="cross" onclick="showHideMenu()">❌</button>
+			<a href="#">Home</a>
+			<a href="#">Missions</a>
+			<a href="#">Research</a>
+			<a href="#">Explorers</a>
+			<a href="#">Our philosophy</a>
+			<button class="explore">
+				Explore SX
+				<span class="explore__icon"></span>
+			</button>
+		</div>
+		<!-- end mobile menu -->
 		<!-- start hero -->
 		<div class="hero">
 			<h2 class="hero__title">SPACE EXPLORATION</h2>
@@ -126,6 +140,14 @@
 		</div>
 		<!-- end footer -->
 		<script>
+			function showHideMenu() {
+				const menu = document.querySelector('.mobile-nav')
+				if (menu.style['display'] === 'none') {
+					menu.style['display'] = 'block'
+				} else {
+					menu.style['display'] = 'none'
+				}
+			}
 			if (window.location.host.includes("localhost")) {
 				const socket = io("http://localhost:3000");
 				socket.on('connect', () => {
