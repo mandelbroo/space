@@ -24,9 +24,9 @@ body
 	left: 0
 	right: 0
 	padding-top: 45px
-	&__left
+	&_left
 		float: left
-	&__right
+	&_right
 		float: right
 		width: 60%
 		text-align: right
@@ -47,9 +47,9 @@ body
 		margin-left: 26px
 		overflow: hidden
 		padding-bottom: 4px
-		&:hover,&.is-active
+		&:hover, &.is-active
 			color: #fff
-			&:before
+			&::before
 				transform: translate(0,0)
 		&::before
 			position: absolute
@@ -73,7 +73,7 @@ body
 	padding: 0 6px 0 14px
 	vertical-align: middle
 	outline: none
-	&__icon
+	&_icon
 		width: 26px
 		height: 28px
 		display: inline-block
@@ -81,7 +81,7 @@ body
 		background: url(./img/down-chevron.svg) no-repeat center/50%
 .logo
 	color: #fff
-	&__sx
+	&_sx
 		border: 1px solid #f2f2f2
 		display: inline-block
 		vertical-align: middle
@@ -92,7 +92,7 @@ body
 		line-height: 35px
 		width: 35px
 		text-align: center
-	&__text
+	&_text
 		display: inline-block
 		vertical-align: middle
 		font-size: 19px
@@ -106,16 +106,16 @@ body
 	line-height: 1.5
 	text-align: center
 	font-size: 16px
-	&__title
+	&_title
 		font-size: 80px
 		color: #2addbc
 		+black
 		line-height: 1
 		margin-bottom: 30px
-	&__action
+	&_action
 		text-align: center
 		margin-top: 120px
-	&__start
+	&_start
 		border-bottom: 2px solid #2addbc
 		padding: 0 16px 10px 16px
 		text-transform: uppercase
@@ -136,7 +136,7 @@ body
 		margin: 10px 0 10px
 	p
 		padding: 18px 80px 8px
-	.select__real
+	.select_real
 		display: inline-block
 		height: 35px
 		line-height: 32px
@@ -158,20 +158,21 @@ body
 	color: #7c7c7c
 	background-color: #fff
 	width: 100%
-	.container__top
+	padding: 60px 0 120px
+	&_top
 		border-bottom: 1px rgba(#acafb8, .2) solid
 		max-width: 1100px
-		padding: 60px 0 120px
+		padding-bottom: 80px
 		margin: auto
-	&__cols
+	&_cols
 		display: flex
 		justify-content: space-around
 		align-items: baseline
 		flex-direction: row
-	&__col
+	&_col
 		text-align: left
 		width: 200px
-		h3
+		&_head
 			font-size: 14px
 			+bold
 			text-transform: uppercase
@@ -195,19 +196,19 @@ body
 		color: #7c7c7c
 		&:hover
 			color: #abaeb7
-	.container__bottom
+	&_bottom
 		max-width: 1100px
-		padding: 80px 0 120px
+		padding-top: 80px
 		margin: auto
-	&__about
+	&_about
 		float: left
 		line-height: 35px
 		.logo
 			display: inline-block
-			&__sx
+			&_sx
 				border-color: #7c7c7c
 				color: #dd2ac2
-	&__links
+	&_links
 		float: right
 		line-height: 35px
 		a:first-child

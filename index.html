@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-		<title>SpaceX</title>
+		<title>SpaceEX</title>
 		<link href="./build/index.css" rel="stylesheet" />
 		<script src="./node_modules/socket.io-client/dist/socket.io.js"></script>
 	</head>
@@ -11,13 +11,13 @@
 		<!-- start header -->
 		<header class="header">
 			<div class="container">
-				<div class="header__left">
+				<div class="header_left">
 					<div class="logo">
-						<div class="logo__sx">SX</div>
-						<div class="logo__text">SpaceX</div>
+						<div class="logo_sx">SX</div>
+						<div class="logo_text">SpaceEX</div>
 					</div>
 				</div>
-				<div class="header__right">
+				<div class="header_right">
 					<nav class="nav">
 						<a class="is-active" href="#">Home</a>
 						<a href="#">Missions</a>
@@ -27,7 +27,7 @@
 					</nav>
 					<button class="explore">
 						Explore SX
-						<span class="explore__icon"></span>
+						<span class="explore_icon"></span>
 					</button>
 					<button class="burger" style="display:none" onclick="showHideMenu()">☰</button>
 				</div>
@@ -37,23 +37,23 @@
 		<!-- start mobile menu -->
 		<div class="mobile-nav" style="display:none">
 			<button class="cross" onclick="showHideMenu()">❌</button>
-			<a href="#">Home</a>
+			<a class="is-active" href="#">Home</a>
 			<a href="#">Missions</a>
 			<a href="#">Research</a>
 			<a href="#">Explorers</a>
 			<a href="#">Our philosophy</a>
 			<button class="explore">
 				Explore SX
-				<span class="explore__icon"></span>
+				<span class="explore_icon"></span>
 			</button>
 		</div>
 		<!-- end mobile menu -->
 		<!-- start hero -->
 		<div class="hero">
-			<h2 class="hero__title">SPACE EXPLORATION</h2>
-			<p class="hero__text">Space exploration is the ongoing discovery and exploration of celestial structures in outer space</p>
-			<div class="hero__action">
-				<a href="#" class="hero__start">START EXPLORING</a>
+			<h2 class="hero_title">SPACE EXPLORATION</h2>
+			<p class="hero_text">Space exploration is the ongoing discovery and exploration of celestial structures in outer space</p>
+			<div class="hero_action">
+				<a href="#" class="hero_start">START EXPLORING</a>
 			</div>
 		</div>
 		<!-- end hero -->
@@ -64,7 +64,7 @@
 				<h3>You should take a quick loot at our data</h3>
 				<p>We want to show you how the process works. <label for="select">Display data for:</label></p>
 				<div class="select">
-					<select class="select__real" id="select">
+					<select class="select_real" id="select">
 						<option value="">October</option>
 						<option value="">November</option>
 						<option value="">December</option>
@@ -76,10 +76,10 @@
 		<!-- end analytics -->
 		<!-- start footer -->
 		<div class="footer">
-			<div class="container__top">
-				<div class="footer__cols">
-					<div class="footer__col">
-						<h3>Home</h3>
+			<div class="footer_top">
+				<div class="footer_cols">
+					<div class="footer_col">
+						<h3 class="footer_col_head">Home</h3>
 						<ul>
 							<li><a href="#">Timeline</a></li>
 							<li><a href="#">Analytics</a></li>
@@ -87,8 +87,8 @@
 							<li><a href="#">Press releases</a></li>
 						</ul>
 					</div>
-					<div class="footer__col">
-						<h3>Mission</h3>
+					<div class="footer_col">
+						<h3 class="footer_col_head">Mission</h3>
 						<ul>
 							<li><a href="#">Mars</a></li>
 							<li><a href="#">Venus</a></li>
@@ -96,8 +96,8 @@
 							<li><a href="#">Atlantis</a></li>
 						</ul>
 					</div>
-					<div class="footer__col">
-						<h3>Research</h3>
+					<div class="footer_col">
+						<h3 class="footer_col_head">Research</h3>
 						<ul>
 							<li><a href="#">Fusion drive</a></li>
 							<li><a href="#">Quantum drive</a></li>
@@ -106,16 +106,16 @@
 							<li><a href="#">Navigation systems</a></li>
 						</ul>
 					</div>
-					<div class="footer__col">
-						<h3>Explorers</h3>
+					<div class="footer_col">
+						<h3 class="footer_col_head">Explorers</h3>
 						<ul>
 							<li><a href="#">Search database</a></li>
 							<li><a href="#">Current</a></li>
 							<li><a href="#">Archive</a></li>
 						</ul>
 					</div>
-					<div class="footer__col">
-						<h3>Our philosophy</h3>
+					<div class="footer_col">
+						<h3 class="footer_col_head">Our philosophy</h3>
 						<ul>
 							<li><a href="#">Mission statement</a></li>
 							<li><a href="#">Our value</a></li>
@@ -125,14 +125,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="container__bottom">
-				<div class="footer__about">
+			<div class="footer_bottom">
+				<div class="footer_about">
 					<div class="logo">
-						<div class="logo__sx">SX</div>
+						<div class="logo_sx">SX</div>
 					</div>
-					SpaceX is the leader of space exploration industry
+					SpaceEX
 				</div>
-				<div class="footer__links">
+				<div class="footer_links">
 					<a href="#">Space explorers code of honour</a>
 					<a href="#">Terms and conditions</a>
 				</div>

@@ -1,8 +1,8 @@
 @media screen and (max-width: 600px)
   .header
-    &__left
+    &_left
       padding-left: 30px
-    &__right
+    &_right
       top: 0
       width: auto
       .nav
@@ -25,6 +25,7 @@
         vertical-align: middle
         text-align: center
         width: 35px
+  
   .mobile-nav
     background-color: #2d2824
     display: flex
@@ -36,6 +37,7 @@
     text-align: center
     .cross
       display: inline-block
+      color: #abaeb7
       height: 35px
       line-height: 32px
       font-size: 25px
@@ -45,7 +47,7 @@
       vertical-align: middle
       outline: none
       position: absolute
-      right: 34px
+      right: 33px
       top: 46px
     .explore
       margin-top: 40px
@@ -58,9 +60,9 @@
       overflow: hidden
       padding: 30px 0 10px
       margin: 0 25% 0
-      &:hover,&.is-active
+      &:hover, &.is-active
         color: #fff
-        &:before
+        &::before
           transform: translate(0,0)
       &::before
         position: absolute
@@ -72,15 +74,17 @@
         content: ""
         transform: translate(-100%, 0)
         transition: transform .2s linear
+  
   .hero
     padding-top: 200px
-    &__title
+    &_title
       font-size: 42px
-    &__text
+    &_text
       max-width: 300px
       margin: auto
-    &__action
+    &_action
       margin-top: 150px
+  
   .analytics
     padding-top: 100px
     padding-bottom: 140px
@@ -89,34 +93,38 @@
     h3
       font-size: 24px
       padding: 0px 38px 0
+  
   .footer
     text-align: center
-    &__cols
+    padding: 30px 0 40px
+    &_top
+      padding-bottom: 30px
+    &_cols
       display: flex
-      flex-direction: column
-      align-self: center
-    &__col
-      align-self: center
-      h3
-        font-size: 18px
-    .container__top
-      padding-bottom: 70px
-    .container__bottom
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-start
+    &_col
+      width: 40%
+      padding-left: 10%
+      &_head
+        margin: 26px 0 12px
+      ul
+        padding: 0
+      a
+        font-size: 13px
+    &_bottom
       display: flex
-      flex-direction: column
-      padding-bottom: 80px
-      div
-        max-width: 300px
-        align-self: center
-        font-size: 14px
-    &__about
-      display: flex
-      flex-direction: column
-      .logo
-        padding-bottom: 20px
-    &__links
+      flex-direction: column-reverse
+      padding-top: 30px
+    &_about
       padding-top: 20px
+      font-size: 14px
+      .logo
+        padding-right: 10px
+    &_links
       display: flex
       flex-direction: column
+      font-size: 12px
       a:first-child
         margin-right: 0
