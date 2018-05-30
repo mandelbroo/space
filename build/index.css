@@ -107,20 +107,22 @@ body {
     font-family: gBold, sans-serif; }
 
 .hero {
-  background: #36373f url(./img/hero.jpg) no-repeat 50% 50%;
+  background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(./img/hero.jpg) no-repeat 50% 50%;
   background-size: cover;
   height: 78vh;
   padding-top: 300px;
   color: #fff;
   line-height: 1.5;
   text-align: center;
-  font-size: 16px; }
+  font-size: 16px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); }
   .hero_title {
     font-size: 80px;
     color: #2addbc;
     font-family: gBlack, sans-serif;
     line-height: 1;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.4); }
   .hero_action {
     text-align: center;
     margin-top: 120px; }

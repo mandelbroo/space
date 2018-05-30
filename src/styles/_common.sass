@@ -98,7 +98,7 @@ body
 		font-size: 19px
 		+bold
 .hero
-	background: #36373f url(./img/hero.jpg) no-repeat 50% 50%
+	background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url(./img/hero.jpg) no-repeat 50% 50%
 	background-size: cover
 	height: 78vh
 	padding-top: 300px
@@ -106,12 +106,14 @@ body
 	line-height: 1.5
 	text-align: center
 	font-size: 16px
+	text-shadow: 2px 2px 5px rgba(0,0,0, 0.6)
 	&_title
 		font-size: 80px
 		color: #2addbc
 		+black
 		line-height: 1
 		margin-bottom: 30px
+		text-shadow: 2px 2px 11px rgba(0,0,0,0.4)
 	&_action
 		text-align: center
 		margin-top: 120px
